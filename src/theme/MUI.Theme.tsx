@@ -1,31 +1,31 @@
-import { createTheme } from "@mui/material";
+import { createTheme } from '@mui/material';
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: "hsl(220, 100%, 50%)", // 3 blue
-      light: "hsl(201, 100%, 50%)", // 4
-      dark: "hsl(209, 100%, 33%)", // 6
+      main: 'hsl(220, 100%, 50%)', // 3 blue
+      light: 'hsl(201, 100%, 50%)', // 4
+      dark: 'hsl(209, 100%, 33%)', // 6
     },
     secondary: {
-      main: "hsl(0, 10%, 55%)", // 5
-      light: "hsl(0, 0%, 92%)", // 7
-      dark: "hsl(0, 0%, 80%)", // 2 ,
+      main: 'hsl(0, 10%, 55%)', // 5
+      light: 'hsl(0, 0%, 92%)', // 7
+      dark: 'hsl(0, 0%, 80%)', // 2 ,
     },
     background: {
-      default: "hsl(0, 0%, 100%)", //  white
-      paper: "hsll(228, 100%, 98%)", // 1 lightblue
+      default: 'hsl(0, 0%, 100%)', //  white
+      paper: 'hsll(228, 100%, 98%)', // 1 lightblue
     },
     error: {
-      main: "hsl(6, 56%, 52%)", // 9 orange-red
+      main: 'hsl(6, 56%, 52%)', // 9 orange-red
     },
     success: {
-      main: "hsl(102, 29%, 52%)", // 10 lightgreen
+      main: 'hsl(102, 29%, 52%)', // 10 lightgreen
     },
     text: {
-      primary: "hsl(0, 0%, 0%)", // black
-      secondary: "hsl(0, 0%, 40%)", // 11
-      disabled: "hsl(220, 14%, 17%)",
+      primary: 'hsl(0, 0%, 0%)', // black
+      secondary: 'hsl(0, 0%, 40%)', // 11
+      disabled: 'hsl(220, 14%, 17%)',
     },
   },
 
@@ -37,47 +37,47 @@ const theme = createTheme({
     fontWeightMedium: 500,
     fontWeightBold: 600,
     h1: {
-      fontSize: "1.375rem", // 22px
+      fontSize: '1.375rem', // 22px
       fontWeight: 600,
       lineHeight: 1.5, // 33px
     },
     h2: {
-      fontSize: "2.375rem", // 38px
+      fontSize: '2.375rem', // 38px
       fontWeight: 500,
       lineHeight: 1.5, // ~56px
     },
     h3: {
-      fontSize: "2.75rem", // 44px
+      fontSize: '2.75rem', // 44px
       fontWeight: 500,
     },
     body1: {
-      fontSize: "1.125rem", // 18px
+      fontSize: '1.125rem', // 18px
       fontWeight: 300,
       lineHeight: 1.4,
     },
     body2: {
-      fontSize: "1rem", // 16px
+      fontSize: '1rem', // 16px
       fontWeight: 300,
       lineHeight: 1.5, // 24px
     },
     button: {
-      fontSize: "0.875rem", // 14px
+      fontSize: '0.875rem', // 14px
       fontWeight: 600,
       lineHeight: 1.5, // 21px
     },
     caption: {
-      fontSize: "0.75rem", // 12px
+      fontSize: '0.75rem', // 12px
       fontWeight: 400,
       lineHeight: 2.1, // 25.2px
     },
     subtitle1: {
-      fontSize: "0.813rem", // 13px
+      fontSize: '0.813rem', // 13px
       fontWeight: 400,
       lineHeight: 1.5, // 19.5px
     },
   },
 });
 
-theme.shadows[1] = "0px 5px 15px 0px hsla(0, 0%, 0%, 0.14)";
+theme.shadows[1] = '0px 5px 15px 0px hsla(0, 0%, 0%, 0.14)';
 
 export { theme };

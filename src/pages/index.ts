@@ -1,2 +1,2 @@
-export * from "./home";
-export * from "./catalog";
+export * from './home';
+export * from './catalog';
