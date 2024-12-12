@@ -26,7 +26,15 @@
     "paths": {
       "@/*": ["./src/*"],
       "@/theme": ["./src/theme/*"],
-      "@/pages": ["./src/pages/*", "./src/pages/index.ts"]
+      "@/pages": ["./src/pages/*", "./src/pages/index.ts"],
+      "@/icons/*": ["./src/assets/icons/*"],
+      "@/images/*": ["./src/assets/images/*"],
+      "@/components": ["./src/components/*", "./src/components/index.ts"],
+      "@/layouts": ["./src/layouts/*", "./src/layouts/index.ts"],
+      "@/services": ["./src/services/*", "./src/services/index.ts"],
+      "@/types": ["./src/types/*"],
+      "@/utils": ["./src/utils/*"],
+      "@/store": ["./src/store/*", "./src/store/index.ts"]
     }
   },
 
