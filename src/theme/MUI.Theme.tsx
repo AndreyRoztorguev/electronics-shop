@@ -1,16 +1,19 @@
+import { MuiCard } from '@/theme/mui/components/MuiCard';
 import { createTheme } from '@mui/material';
+
+import { MuiButton } from './mui/components';
 
 const theme = createTheme({
   palette: {
     primary: {
       main: 'hsl(220, 100%, 50%)', // 3 blue
       light: 'hsl(201, 100%, 50%)', // 4
-      dark: 'hsl(209, 100%, 33%)', // 6
+      dark: 'hsl(209, 100%, 33%)', // 2
     },
     secondary: {
       main: 'hsl(0, 10%, 55%)', // 5
       light: 'hsl(0, 0%, 92%)', // 7
-      dark: 'hsl(0, 0%, 80%)', // 2 ,
+      dark: 'hsl(0, 0%, 80%)', // 6 ,
     },
     background: {
       default: 'hsl(0, 0%, 100%)', //  white
@@ -75,9 +78,21 @@ const theme = createTheme({
       fontWeight: 400,
       lineHeight: 1.5, // 19.5px
     },
+    overline: {
+      fontSize: '0.75rem', // 12px
+      lineHeight: 2, // 24
+    },
+  },
+  components: {
+    MuiButton,
+    MuiCard,
   },
 });
 
 theme.shadows[1] = '0px 5px 15px 0px hsla(0, 0%, 0%, 0.14)';
+
+type MUITheme = typeof theme;
+
+export type { MUITheme };
 
 export { theme };
