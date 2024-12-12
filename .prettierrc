@@ -5,7 +5,7 @@
   "singleQuote": true,
   "semi": true,
   "plugins": ["@trivago/prettier-plugin-sort-imports"],
-  "importOrder": ["<THIRD_PARTY_MODULES>", "^@/pages", "^[./]", "^.+\\.css$"],
-  "importOrderSeparation": false,
+  "importOrder": ["^.+\\.css$", "<THIRD_PARTY_MODULES>", "^@/pages", "^[./]"],
+  "importOrderSeparation": true,
   "importOrderSortSpecifiers": true
 }
