@@ -5,7 +5,7 @@ import '@fontsource/poppins/500.css';
 import '@fontsource/poppins/600.css';
 
 import { theme } from '@/theme/MUI.Theme';
-import { Checkbox, CssBaseline, ThemeProvider } from '@mui/material';
+import { CssBaseline, ThemeProvider } from '@mui/material';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import { Catalog, Home } from '@/pages';
@@ -14,7 +14,6 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Checkbox defaultChecked />
       <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
