@@ -1,11 +1,11 @@
-import { ProductCard } from '@/components/ui/product-card';
+import { ProductCard } from '@/components';
 import CheckMarkSuccessIcon from '@/icons/check-mark-success.svg?react';
 import PhoneErrorIcon from '@/icons/error-phone.svg?react';
 import { Container, Stack, SvgIcon } from '@mui/material';
 
 const Home = () => {
   return (
-    <Container>
+    <Container maxWidth="xl">
       <Stack flexDirection="row" columnGap={3}>
         <ProductCard
           image="https://content2.rozetka.com.ua/goods/images/big/447661075.jpg"
@@ -92,7 +92,7 @@ const Home = () => {
           }}
         />
       </Stack>
-      <Stack flexDirection="row" columnGap={3}>
+      {/* <Stack flexDirection="row" columnGap={3}>
         <ProductCard
           image="https://content2.rozetka.com.ua/goods/images/big/395153942.jpg"
           title="EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On..."
@@ -127,7 +127,7 @@ const Home = () => {
           price="$299.00"
           reviews={3}
         />
-      </Stack>
+      </Stack> */}
     </Container>
   );
 };
