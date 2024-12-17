@@ -8,6 +8,7 @@ import {
   CardActions,
   CardHeader,
   IconButton,
+  PaperPropsVariantOverrides,
   Rating,
   Stack,
   SvgIcon,
@@ -16,6 +17,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import { OverridableStringUnion } from '@mui/types';
 import { FC, ReactNode } from 'react';
 
 type Status = 'success' | 'error';
@@ -34,6 +36,10 @@ interface ProductCardProps {
   price: string;
   header?: HeaderCardProps;
   allowCardAction?: boolean;
+  variant?: OverridableStringUnion<
+    'elevation' | 'outlined',
+    PaperPropsVariantOverrides
+  >;
 }
 
 const ProductCard: FC<ProductCardProps> = ({
@@ -43,10 +49,11 @@ const ProductCard: FC<ProductCardProps> = ({
   oldPrice,
   price,
   allowCardAction,
+  variant = 'elevation',
   header: { Icon, Content, status = 'success' } = {} as HeaderCardProps,
 }) => {
   return (
-    <Card variant="outlined" sx={{ position: 'relative', maxWidth: 230 }}>
+    <Card variant={variant} sx={{ position: 'relative' }}>
       <CardHeader
         title={Content}
         avatar={Icon}
@@ -89,7 +96,11 @@ const ProductCard: FC<ProductCardProps> = ({
         component="img"
         height="160rem"
         image={image}
-        sx={{ objectFit: 'contain', padding: '1.25rem' }}
+        sx={{
+          maxWidth: '100%',
+          objectFit: 'contain',
+          padding: '1.25rem',
+        }}
         alt="green iguana"
       />
       <CardContent>

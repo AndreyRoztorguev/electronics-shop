@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 
 const MainLayout = () => {
   return (
-    <Container maxWidth="xl">
+    <Container maxWidth="xl" disableGutters>
       <Header />
       <Outlet />
       <Footer />

@@ -1,6 +1,7 @@
 import { InputSearch } from '@/components/core';
 import { Nav } from '@/components/ui/nav';
 import { WorkingTime } from '@/components/ui/working-time';
+import CrossIcon from '@/icons/cross.svg?react';
 import FBIcon from '@/icons/fb.svg?react';
 import InstIcon from '@/icons/inst.svg?react';
 import LogoIcon from '@/icons/logo.svg?react';
@@ -9,6 +10,7 @@ import TrolleyIcon from '@/icons/trolley.svg?react';
 import {
   Avatar,
   Badge,
+  Box,
   Container,
   IconButton,
   Link,
@@ -22,7 +24,7 @@ import { Link as ReactLink } from 'react-router-dom';
 const Header = () => {
   const [isSearchActive, setIsSearchActive] = useState(false);
   const handleSearchClick = () => {
-    setIsSearchActive(true);
+    setIsSearchActive((prev) => !prev);
   };
   return (
     <Container maxWidth="xl" disableGutters>
@@ -75,17 +77,36 @@ const Header = () => {
           </Stack>
         </Container>
       </Stack>
-      <Container maxWidth="lg">
-        <Stack flexDirection="row" alignItems="center">
+      <Container maxWidth="lg" sx={{ paddingBlock: 1 }}>
+        <Stack flexDirection="row" alignItems="center" height="4.5rem">
           <Link to="/" component={ReactLink}>
             <IconButton edge="start">
               <SvgIcon component={LogoIcon} inheritViewBox />
             </IconButton>
           </Link>
-          <Nav />
+          {isSearchActive ? (
+            <InputSearch
+              placeholder="Search entiere store here..."
+              sx={{ flex: 1, marginInlineStart: 2 }}
+            />
+          ) : (
+            <Nav />
+          )}
           <Stack flexDirection="row" alignItems="center" columnGap={1}>
             <IconButton onClick={handleSearchClick}>
-              <SvgIcon component={SearchIcon} inheritViewBox />
+              {isSearchActive ? (
+                <SvgIcon
+                  component={CrossIcon}
+                  viewBox="-5 0 29 19"
+                  sx={{ color: 'black' }}
+                />
+              ) : (
+                <SvgIcon
+                  component={SearchIcon}
+                  inheritViewBox
+                  sx={{ color: 'black' }}
+                />
+              )}
             </IconButton>
             <IconButton>
               <Badge
@@ -109,7 +130,6 @@ const Header = () => {
             </IconButton>
           </Stack>
         </Stack>
-        <InputSearch />
       </Container>
     </Container>
   );
