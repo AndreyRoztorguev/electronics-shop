@@ -16,7 +16,7 @@ const theme = createTheme({
     },
     background: {
       default: 'hsl(0, 0%, 100%)', //  white
-      paper: 'hsll(228, 100%, 98%)', // 1 lightblue
+      paper: 'hsl(228, 100%, 98%)', // 1 lightblue
     },
     error: {
       main: 'hsl(6, 56%, 52%)', // 9 orange-red

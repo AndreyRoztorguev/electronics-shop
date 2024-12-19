@@ -1,8 +1,3 @@
-import CartIcon from '@/icons/cart.svg?react';
-import EmptyStarIcon from '@/icons/gray-star.svg?react';
-import LikeIcon from '@/icons/like.svg?react';
-import StatIcon from '@/icons/statistic.svg?react';
-import FilledStarIcon from '@/icons/yellow-star.svg?react';
 import {
   Button,
   CardActions,
@@ -19,6 +14,12 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { OverridableStringUnion } from '@mui/types';
 import { FC, ReactNode } from 'react';
+
+import CartIcon from '@/icons/cart.svg?react';
+import EmptyStarIcon from '@/icons/gray-star.svg?react';
+import LikeIcon from '@/icons/like.svg?react';
+import StatIcon from '@/icons/statistic.svg?react';
+import FilledStarIcon from '@/icons/yellow-star.svg?react';
 
 type Status = 'success' | 'error';
 

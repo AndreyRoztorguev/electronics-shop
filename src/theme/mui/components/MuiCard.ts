@@ -16,6 +16,7 @@ const MuiCard: Components<MUITheme>['MuiCard'] = {
       style: ({ theme }) => ({
         boxShadow: 'none',
         maxWidth: '14.625rem',
+        backgroundColor: theme.palette.background.default,
       }),
     },
   ],
