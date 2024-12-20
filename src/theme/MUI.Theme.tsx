@@ -1,6 +1,11 @@
 import { createTheme } from '@mui/material';
 
-import { MuiButton, MuiCard, MuiCssBaseline } from './mui/components';
+import {
+  MuiButton,
+  MuiCard,
+  MuiCssBaseline,
+  MuiListItemText,
+} from './mui/components';
 
 const theme = createTheme({
   palette: {
@@ -95,6 +100,7 @@ const theme = createTheme({
     MuiButton,
     MuiCard,
     MuiCssBaseline,
+    MuiListItemText,
   },
 });
 

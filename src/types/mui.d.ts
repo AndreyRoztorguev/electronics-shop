@@ -1,26 +1,17 @@
-// import { PaletteColorOptions } from "@mui/material";
+// import { PaletteColorOptions } from '@mui/material';
 
-// declare module "@mui/material/styles" {
+// declare module '@mui/material/styles' {
 //   interface Palette {
-//     brand: Palette["primary"];
+//     tertiary: Palette['primary'];
 //   }
 //   interface PaletteOptions {
-//     brand?: PaletteColorOptions;
-//   }
-
-//   interface TypeBackground {
-//     primary: PaletteColorOptions;
+//     tertiary: PaletteColorOptions;
 //   }
 // }
 
-// declare module "@mui/material/SvgIcon" {
-//   interface SvgIconPropsColorOverrides {
-//     brand: true;
-//   }
-// }
-
-// declare module '@mui/material/Button' {
-//   interface ButtonPropsVariantOverrides {
-//     third: true;
-//   }
-// }
+declare module '@mui/material/Typography' {
+  interface TypographyPropsColorOverrides {
+    black: true;
+    white: true;
+  }
+}
