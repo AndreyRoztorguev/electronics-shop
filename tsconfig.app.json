@@ -35,7 +35,8 @@
       "@/types": ["./src/types/*"],
       "@/utils": ["./src/utils/*"],
       "@/store": ["./src/store/*", "./src/store/index.ts"]
-    }
+    },
+    "typeRoots": ["node_modules/@types", "src/types"]
   },
 
   "include": ["src"]

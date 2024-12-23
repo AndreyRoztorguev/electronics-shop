@@ -1,4 +1,4 @@
-import { ProductCard } from '@/components';
+import { CustomBuildProductsList, ProductCard } from '@/components';
 import {
   Box,
   Container,
@@ -278,6 +278,7 @@ const Home = () => {
           </Typography>
         </Stack>
       </Paper>
+      <CustomBuildProductsList />
     </Container>
   );
 };

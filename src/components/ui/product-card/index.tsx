@@ -7,11 +7,11 @@ import {
   Rating,
   Stack,
   SvgIcon,
+  Typography,
 } from '@mui/material';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
 import { OverridableStringUnion } from '@mui/types';
 import { FC, ReactNode } from 'react';
 
