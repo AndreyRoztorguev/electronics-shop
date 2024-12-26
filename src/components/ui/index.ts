@@ -5,3 +5,7 @@ export * from './working-time';
 export * from './nav';
 export * from './category-card';
 export * from './custom-build-products';
+export * from './sponsors';
+export * from './news-card';
+export * from './news-cards';
+export * from './support-cards';

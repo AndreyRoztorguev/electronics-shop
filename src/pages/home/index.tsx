@@ -1,4 +1,10 @@
-import { CustomBuildProductsList, ProductCard } from '@/components';
+import {
+  CustomBuildProductsList,
+  NewsCards,
+  ProductCard,
+  Sponsors,
+  SupportCards,
+} from '@/components';
 import {
   Box,
   Container,
@@ -279,6 +285,9 @@ const Home = () => {
         </Stack>
       </Paper>
       <CustomBuildProductsList />
+      <Sponsors />
+      <NewsCards />
+      <SupportCards />
     </Container>
   );
 };

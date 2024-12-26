@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "prettier": "prettier . --write",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "imagemagic": "magick custom-build-product.jpg -resize x460! -quality 80 custom-build-product.webp"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
