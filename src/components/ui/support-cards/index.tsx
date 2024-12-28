@@ -1,14 +1,4 @@
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  Grid2,
-  IconButton,
-  Stack,
-  SvgIcon,
-  Typography,
-} from '@mui/material';
-import { ReactNode } from 'react';
+import { Grid2, IconButton, Stack, SvgIcon, Typography } from '@mui/material';
 
 import AccountIcon from '@/icons/account.svg?react';
 import SavingIcon from '@/icons/saving.svg?react';

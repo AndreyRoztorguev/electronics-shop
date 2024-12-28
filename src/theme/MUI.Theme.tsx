@@ -82,6 +82,11 @@ const theme = createTheme({
       fontWeight: 400,
       lineHeight: 1.5, // 19.5px
     },
+    subtitle2: {
+      fontSize: '0.875rem', // 14px
+      fontWeight: 400,
+      lineHeight: 1.5, // 21px
+    },
     overline: {
       fontSize: '0.75rem', // 12px
       lineHeight: 2, // 24
