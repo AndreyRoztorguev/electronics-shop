@@ -32,15 +32,20 @@ const Item = ({
   </Stack>
 );
 
-const SupportCards = () => {
+const SupportCards = ({
+  bgcolor = 'background.paper',
+}: {
+  bgcolor?: string;
+}) => {
   return (
     <Grid2
       container
       columns={3}
       justifyContent="space-evenly"
       gap={3}
-      mb={5}
-      mt={3}
+      pb={5}
+      pt={3}
+      bgcolor={bgcolor}
     >
       <Grid2 width={260}>
         <Item

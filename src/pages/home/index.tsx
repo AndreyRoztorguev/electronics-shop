@@ -287,7 +287,7 @@ const Home = () => {
       <CustomBuildProductsList />
       <Sponsors />
       <NewsCards />
-      <SupportCards />
+      <SupportCards bgcolor="white" />
     </Container>
   );
 };

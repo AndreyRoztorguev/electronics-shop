@@ -1,15 +1,14 @@
-import { Footer, Header, SupportCards } from '@/components';
+import { SupportCards } from '@/components';
 import { Container } from '@mui/material';
 import { Outlet } from 'react-router-dom';
 
-const MainLayout = () => {
+function SupportLayout() {
   return (
     <Container maxWidth="xl" disableGutters>
-      <Header />
       <Outlet />
-      <Footer />
+      <SupportCards />
     </Container>
   );
-};
+}
 
-export { MainLayout };
+export { SupportLayout };
